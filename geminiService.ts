@@ -2,11 +2,6 @@
 import { GoogleGenAI } from "@google/genai";
 import { AspectRatio, ImageSize } from "./types";
 
-client = genai.Client(
-    api_key="API_KEY",
-    http_options={"base_url": "https://api.nuwaflux.com"},
-)
-
 export class GeminiService {
   private static getClient() {
     // Create a new instance right before making an API call to ensure it uses the latest API key.
